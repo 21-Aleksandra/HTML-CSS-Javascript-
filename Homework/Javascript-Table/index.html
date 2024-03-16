@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+Enter your name, surname and student id number here
+-->
+<html>
+    <head>
+        <title>Elections Activity</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="activities.js"></script>
+        <script type="text/javascript" src="homework3.js"></script>
+        <style>
+            table, td, th { border: 1px solid gray; border-collapse: collapse;}
+            td:nth-child(5), td:nth-child(6), td:nth-child(7) {text-align: right;}
+        </style>
+    </head>
+    <body>
+        <h1>Elections Activity</h1>
+        <div>
+          <div>
+            <label for="region-list">Ŗegion:</label>
+            <select id="region-list">
+				<option value="">All</option>
+			</select>
+          </div>
+          <div>
+            <label for="polling-list">Polling station:</label>
+            <select id="polling-list"></select>
+          </div>
+          <div>
+            <label for="vote-from">Voters from:</label>      
+            <input type="text" id="vote-from">
+            <label for="vote-from" id="vldSum" style="display:none">Error!   Enter a positive integer!</label>
+          </div>    
+          <div>
+            <label for="vote-until">Voters until:</label>      
+            <input type="text" id="vote-until">
+            <label for="vote-until" id="vldSum2" style="display:none">Error!   Enter a positive integer!</label>
+          </div>        
+          <div>
+            <label for="search">Polling station search:</label>      
+            <input type="search" id="search">
+          </div>
+          <div>
+            <label for="total">Total</label>      
+            <input type="checkbox" id="total">
+            <label for="day">Voted on election day</label>   
+            <input type="checkbox" id="day">
+          </div>
+          <div id="buttons">
+            <button id="show-stats">Show statistics</button>
+          </div>
+            <table id="tab">
+          </table>
+        </div>
+    </body>
+</html>
